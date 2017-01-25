@@ -1,0 +1,17 @@
+{ "projects": [{
+    "title": "School Trip to see Hidden Figures",
+    "manager": "Michelle Mischi Cody",
+    "description": "In addition to providing the students with academic excellence, we want to expose our students to REAL life examples of pioneers in the field. With this, we have decided to take the whole Willie Brown community to see 'Hidden Figures'. ",
+    "goal": 3355
+    }, {
+    "title": "Help Epicodus improve environment",
+    "manager": "Haley & Margie",
+    "description": "In order to prepare future developers to work in a tech company environment, we believe it is in the best interest of Epicodus to have Kombucha on tap, bean bag chairs, hammocks, a nap room, free snacks, and laptops for every student. This will allow students to understand what their future work environments will be.",
+    "goal": 50000
+      }, {
+    "title": "Help Haley Fix Her Car",
+    "manager": "Haley",
+    "description": "On Monday evening, Haley had the misfortune of hitting an insanely deep pothole, and now has a flat tire. Apparently tires cost a fortune, which she cannot currently afford. Help her!",
+    "goal": 3000
+  }]
+}
