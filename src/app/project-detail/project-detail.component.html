@@ -2,4 +2,10 @@
   <h3>{{(projectToDisplay | async)?.title}}</h3>
   <h4>{{(projectToDisplay | async)?.manager}}</h4>
   <p>{{(projectToDisplay | async)?.description}}</p>
+  <p><strong>Amount Left To Raise:</strong> ${{(projectToDisplay | async)?.goal}}.00</p>
+  <label>Donate to this Project</label>
+  <input type="text" #donationAmount>
+  <br>
+  <button (click)="donateToProject(projectToDisplay, donationAmount.value)">Donate</button>
+
 </div>

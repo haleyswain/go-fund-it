@@ -28,5 +28,10 @@ export class ProjectDetailComponent implements OnInit {
     });
     this.projectToDisplay = this.projectService.getProjectById(this.projectId);
   }
+  donateToProject(project, donationAmount) {
+    this.projectService.updateGoal(this.projectId, donationAmount);
+
+  }
+
 
 }

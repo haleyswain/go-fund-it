@@ -1,3 +1,8 @@
 export class Project {
-  constructor(public title: string, public manager: string, public description: string, public goal: number) { }
+  public $key: string;
+  constructor(
+    public title: string,
+    public manager: string,
+    public description: string,
+    public goal: number) { }
 }

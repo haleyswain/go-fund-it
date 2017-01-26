@@ -13,6 +13,8 @@ import { Router } from '@angular/router';
 })
 export class ProjectListComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
+  filterByBudgetness: string = "allProjects"
 
   constructor(private router: Router, private projectService: ProjectService) { }
 
@@ -28,4 +30,7 @@ export class ProjectListComponent implements OnInit {
     var newProject: Project = new Project(title, manager, description, goal);
     this.projectService.addProject(newProject);
   }
+  onChange(optionFromMenu) {
+  this.filterByBudgetness = optionFromMenu;
+}
 }

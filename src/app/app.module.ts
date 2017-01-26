@@ -9,6 +9,8 @@ import { AdminComponent } from './admin/admin.component';
 import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
+import { EditProjectComponent } from './edit-project/edit-project.component';
+import { BudgetnessPipe } from './budgetness.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -22,7 +24,9 @@ export const firebaseConfig = {
     AppComponent,
     ProjectListComponent,
     ProjectDetailComponent,
-    AdminComponent
+    AdminComponent,
+    EditProjectComponent,
+    BudgetnessPipe
   ],
   imports: [
     BrowserModule,
