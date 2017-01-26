@@ -5,3 +5,30 @@
     <h3><em>{{project.title}}</em> by {{project.manager}}</h3>
   </div>
 </div>
+<hr>
+<h3>Add New Project to the list</h3>
+<div>
+  <div>
+    <label>Project Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Project Manager:</label>
+    <br>
+    <input #newManager>
+  </div>
+
+  <div>
+    <label>Project Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+  <div>
+    <label>Project fund goal:</label>
+    <br>
+    <textarea #newGoal></textarea>
+  </div>
+  <button (click)="submitForm(newTitle.value, newManager.value, newDescription.value, newGoal.value); newTitle.value=''; newManager.value=''; newDescription.value=''; newGoal.value=''">Add</button>
+</div>

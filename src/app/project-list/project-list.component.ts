@@ -23,4 +23,9 @@ export class ProjectListComponent implements OnInit {
   goToDetailPage(clickedProject) {
     this.router.navigate(['project-list', clickedProject.$key]);
   };
+
+  submitForm(title: string, manager: string, description: string, goal: number) {
+    var newProject: Project = new Project(title, manager, description, goal);
+    this.projectService.addProject(newProject);
+  }
 }
